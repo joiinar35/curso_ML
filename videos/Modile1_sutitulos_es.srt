@@ -1,0 +1,387 @@
+0
+00:00:05,120 --> 00:00:08,080
+Bienvenido a Un día en la vida de un ingeniero de aprendizaje automático.
+
+1
+00:00:08,880 --> 00:00:11,840
+Después de ver este video, podrá:
+
+2
+00:00:11,840 --> 00:00:14,080
+Describir la importancia y los requisitos de
+
+3
+00:00:14,080 --> 00:00:17,200
+cada proceso en el ciclo de vida de un modelo de aprendizaje automático.
+
+4
+00:00:17,200 --> 00:00:21,453
+Y nombrar los procesos que consumen más tiempo que otros.
+
+5
+00:00:22,160 --> 00:00:25,280
+Ahora, repasemos el ciclo de vida de un modelo de aprendizaje automático
+
+6
+00:00:25,280 --> 00:00:27,468
+en un proyecto en el que estoy trabajando actualmente.
+
+7
+00:00:27,920 --> 00:00:32,720
+Para ayudar a aumentar los ingresos comerciales, me han encomendado la tarea de crear e implementar un
+
+8
+00:00:32,720 --> 00:00:36,880
+modelo que recomiende productos similares a los que el cliente ya ha comprado.
+
+9
+00:00:37,680 --> 00:00:42,348
+He trabajado junto con el cliente para llegar a un punto crítico para el usuario final:
+
+10
+00:00:42,800 --> 00:00:46,640
+"Como cliente de productos de belleza, me gustaría recibir recomendaciones de
+
+11
+00:00:46,640 --> 00:00:51,360
+otros productos en función de mi historial de compras para poder abordar mis necesidades de cuidado de la piel
+
+12
+00:00:51,360 --> 00:00:54,070
+y mejorar la salud general de mi piel".
+
+13
+00:00:54,640 --> 00:01:00,080
+Definir el problema o plantear la situación es muy importante, porque
+
+14
+00:01:00,080 --> 00:01:06,112
+quiero asegurarme de que la solución de aprendizaje automático que estoy brindando esté alineada con las necesidades del cliente.
+
+15
+00:01:06,960 --> 00:01:13,120
+Ahora que entiendo las necesidades del cliente, el siguiente paso es comenzar la recopilación de datos. Debo
+
+16
+00:01:13,120 --> 00:01:18,400
+determinar qué tipo de datos tiene la empresa e identificar las fuentes de las que provendrán.
+
+17
+00:01:19,120 --> 00:01:23,120
+Estos podrían ser datos de usuario como datos demográficos, historial de compras,
+
+18
+00:01:23,120 --> 00:01:26,240
+y cualquier cosa relacionada con transacciones completadas.
+
+19
+00:01:26,240 --> 00:01:32,480
+También puedo obtener los datos del producto, es decir, el inventario de productos y lo que hacen,
+
+20
+00:01:32,480 --> 00:01:37,440
+sus ingredientes, qué tan populares son, sus calificaciones de clientes, etc.
+
+21
+00:01:38,240 --> 00:01:43,680
+Además, puedo ver otros datos que incluyen información como los productos guardados de un usuario,
+
+22
+00:01:43,680 --> 00:01:48,560
+productos que le gustan, historial de búsqueda, productos más visitados, etc.
+
+23
+00:01:49,760 --> 00:01:55,760
+Luego, seguiré adelante y haré una transformación importante al ordenar, agregar,
+
+24
+00:01:55,760 --> 00:02:00,080
+unir, fusionar y mapear los datos en una fuente central.
+
+25
+00:02:00,800 --> 00:02:05,840
+Esto reduce la necesidad de trabajar con múltiples bases de datos cada vez que necesitamos extraer datos.
+
+26
+00:02:06,640 --> 00:02:11,600
+El siguiente paso en el proceso es la preparación de los datos. La mayoría de las veces,
+
+27
+00:02:11,600 --> 00:02:17,280
+los datos de múltiples fuentes contendrán errores, formatos diferentes y datos faltantes.
+
+28
+00:02:18,240 --> 00:02:22,880
+Este proceso se superpone con el proceso de recopilación de datos, ya que se pueden realizar en conjunto.
+
+29
+00:02:23,520 --> 00:02:28,480
+El objetivo aquí es preparar una versión final de los datos.
+
+30
+00:02:29,040 --> 00:02:31,120
+Debo asegurarme de que
+
+31
+00:02:31,120 --> 00:02:34,080
+los datos se limpien para filtrar los datos irrelevantes,
+
+32
+00:02:34,720 --> 00:02:38,240
+los valores extremos se eliminen para evitar que influyan en el conjunto de datos,
+
+33
+00:02:38,800 --> 00:02:41,920
+los valores faltantes se eliminen o se generen aleatoriamente,
+
+34
+00:02:41,920 --> 00:02:45,840
+dependiendo de lo que puedan significar los datos faltantes, y de que
+
+35
+00:02:45,840 --> 00:02:48,480
+Cada columna de datos tiene el formato adecuado.
+
+36
+00:02:49,040 --> 00:02:55,360
+Por ejemplo, las fechas deben tener el formato de fecha y las cadenas deben estar identificadas correctamente.
+
+37
+00:02:56,240 --> 00:02:59,280
+También es posible que deba crear funciones adicionales.
+
+38
+00:02:59,280 --> 00:03:05,120
+Por ejemplo, es posible que deba calcular la duración promedio entre transacciones para cada usuario.
+
+39
+00:03:05,120 --> 00:03:07,440
+y encontrar qué productos compran con más frecuencia.
+
+40
+00:03:08,000 --> 00:03:12,160
+O tal vez necesite una función que identifique qué tipo de problemas de piel
+
+41
+00:03:12,160 --> 00:03:16,320
+a los que se dirige cada producto y los asigne a cada usuario.
+
+42
+00:03:16,960 --> 00:03:20,160
+Puedo crear gráficos para identificar patrones visualmente,
+
+43
+00:03:20,800 --> 00:03:26,960
+validar los datos en función de la información que me ha proporcionado el experto en productos de belleza,
+
+44
+00:03:26,960 --> 00:03:34,000
+y realizar un análisis de correlación para identificar qué variables o características son muy importantes
+
+45
+00:03:34,000 --> 00:03:40,080
+para los hábitos y necesidades de compra de los usuarios. Esto se denomina análisis exploratorio de datos.
+
+46
+00:03:41,040 --> 00:03:46,000
+También puedo identificar cómo planeo dividir los datos para el entrenamiento y las pruebas.
+
+47
+00:03:46,000 --> 00:03:52,960
+Por ejemplo, ¿quiero dividir los datos aleatoriamente o usar la transacción más reciente como un conjunto de prueba?
+
+48
+00:03:53,840 --> 00:03:59,040
+En este ejemplo, decidí poner la transacción más reciente en el conjunto de prueba y asegurarme
+
+49
+00:03:59,040 --> 00:04:03,830
+de que hubiera al menos una transacción del mismo usuario en el conjunto de entrenamiento.
+
+50
+00:04:05,223 --> 00:04:10,423
+En el paso de Desarrollo del modelo, seguiré adelante y crearé un modelo de aprendizaje automático.
+
+51
+00:04:10,880 --> 00:04:16,640
+Siendo realista, trato de aprovechar tantos recursos y marcos preexistentes como sea posible,
+
+52
+00:04:16,640 --> 00:04:18,880
+por lo que no creo nada desde cero.
+
+53
+00:04:19,680 --> 00:04:24,240
+Para esta tarea, utilizaré una técnica llamada filtrado basado en contenido.
+
+54
+00:04:24,880 --> 00:04:29,854
+Esta técnica encuentra la similitud entre productos, en función del contenido del producto.
+
+55
+00:04:30,240 --> 00:04:36,800
+Por ejemplo, si alguien usa un limpiador con mucha agua, es probable que el usuario tenga
+
+56
+00:04:36,800 --> 00:04:41,840
+piel seca y querrá una crema hidratante que también sea muy hidratante.
+
+57
+00:04:42,560 --> 00:04:46,560
+Uno de los pasos que podría seguir aquí es crear una puntuación de similitud de
+
+58
+00:04:46,560 --> 00:04:50,720
+los productos que ha comprado un usuario y clasificarlos en relación con otros productos.
+
+59
+00:04:51,280 --> 00:04:53,920
+Podría recomendar el producto más similar
+
+60
+00:04:53,920 --> 00:04:59,600
+teniendo en cuenta que puede haber otros factores que podrían entrar en juego. Por ejemplo,
+
+61
+00:04:59,600 --> 00:05:04,320
+podría notar que el usuario ha buscado productos sin ingredientes particulares,
+
+62
+00:05:04,320 --> 00:05:06,480
+por lo que quiero asegurarme de que no estemos
+
+63
+00:05:06,480 --> 00:05:10,320
+recomendando un producto que definitivamente no usará.
+
+64
+00:05:10,320 --> 00:05:15,520
+También usaré una técnica llamada Filtrado Colaborativo que utiliza los datos del usuario.
+
+65
+00:05:16,320 --> 00:05:22,075
+Aquí, estoy creando similitudes entre dos usuarios en función de cómo ven un producto.
+
+66
+00:05:22,560 --> 00:05:28,400
+Por ejemplo, puedo crear una similitud en función de cómo dos usuarios califican su producto.
+
+67
+00:05:29,120 --> 00:05:31,280
+Primero, agrupo a los usuarios en un grupo
+
+68
+00:05:31,280 --> 00:05:33,120
+en función de sus características.
+
+69
+00:05:33,120 --> 00:05:39,440
+Esto podría ser edad, región y tipo de piel, productos que los usuarios calificaron o compraron.
+
+70
+00:05:40,080 --> 00:05:43,600
+Luego, puedo tomar las calificaciones promedio de los miembros existentes
+
+71
+00:05:43,600 --> 00:05:48,320
+y asumir que el nuevo usuario estará en algún lugar cerca del promedio, y
+
+72
+00:05:48,320 --> 00:05:52,291
+recomendar un producto en función de lo que otros calificaron como alto.
+
+73
+00:05:52,720 --> 00:05:56,531
+El modelo final será una combinación de las dos técnicas.
+
+74
+00:05:57,440 --> 00:06:02,800
+Una vez que haya terminado de crear el modelo, seguiré adelante y comprobaré que el modelo funciona bien
+
+75
+00:06:02,800 --> 00:06:06,800
+y que las recomendaciones representan lo que quieren los usuarios.
+
+76
+00:06:06,800 --> 00:06:09,520
+Esto se denomina el paso de evaluación del modelo;
+
+77
+00:06:10,640 --> 00:06:15,680
+las etapas iniciales de la evaluación del modelo implicarán ajustar el modelo y
+
+78
+00:06:15,680 --> 00:06:20,000
+hacer algunas pruebas en el conjunto de datos que había guardado anteriormente para las pruebas.
+
+79
+00:06:20,000 --> 00:06:22,160
+Una vez que esté satisfecho con los resultados,
+
+80
+00:06:22,160 --> 00:06:24,320
+evaluaré más el modelo
+
+81
+00:06:24,320 --> 00:06:29,280
+experimentando con las recomendaciones en un grupo de usuarios y pidiendo sus comentarios.
+
+82
+00:06:30,080 --> 00:06:34,480
+En la retroalimentación se pedirá al grupo de usuarios que califique las recomendaciones,
+
+83
+00:06:35,040 --> 00:06:38,640
+y se recopilarán datos sobre la cantidad de personas que hicieron clic
+
+84
+00:06:38,640 --> 00:06:43,360
+y compraron los productos recomendados, junto con cualquier otra métrica necesaria.
+
+85
+00:06:44,480 --> 00:06:50,249
+Ahora que terminé de construir y probar, el modelo está listo para pasar a producción.
+
+86
+00:06:50,560 --> 00:06:54,560
+Para este proyecto, será parte de la aplicación y el sitio web de productos de belleza.
+
+87
+00:06:55,440 --> 00:06:59,600
+Si bien este es el último paso, aún necesito hacer un seguimiento del
+
+88
+00:06:59,600 --> 00:07:04,000
+rendimiento del modelo implementado para asegurarme de que sigue haciendo el trabajo que la empresa requiere.
+
+89
+00:07:04,560 --> 00:07:09,440
+Las iteraciones futuras pueden incluir el reentrenamiento del modelo en función de nueva información
+
+90
+00:07:09,440 --> 00:07:11,760
+para expandir sus capacidades.
+
+91
+00:07:13,200 --> 00:07:15,840
+En este video, aprendiste que:
+
+92
+00:07:15,840 --> 00:07:19,120
+Cada uno de los pasos del ciclo de vida del modelo de aprendizaje automático
+
+93
+00:07:19,120 --> 00:07:21,760
+es importante para el éxito de la solución.
+
+94
+00:07:22,640 --> 00:07:27,120
+Después de la implementación, se requiere un monitoreo y una mejora continuos
+
+95
+00:07:27,120 --> 00:07:30,240
+para garantizar que se mantenga la calidad de la solución.
+
+96
+00:07:31,120 --> 00:07:35,498
+Gracias por ver "Un día en la vida de un ingeniero de aprendizaje automático".
